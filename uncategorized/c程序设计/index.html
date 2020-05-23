@@ -20,27 +20,26 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="《C程序设计》(第五版)————谭浩强">
+  <meta name="description" content="顺序程序设计数据的表现形式及其运算常量和变量在计算机高级语言中，数据有两种表现形式：常量和变量。  常量在程序运行过程中，其值不能被改变的量称为常量。 常用的常量有以下几类： （1）整型常量。12345，0，-345 （2）实型常量。 ​            有两种表现形式： ​            ①十进制小数形式。0.345，-56.79，12.0 ​            ②指数形式。1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《C程序设计》学习笔记">
-<meta property="og:url" content="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="C程序设计">
+<meta property="og:url" content="http://yoursite.com/uncategorized/c%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="Weiwei&#39;s Blog">
-<meta property="og:description" content="《C程序设计》(第五版)————谭浩强">
+<meta property="og:description" content="顺序程序设计数据的表现形式及其运算常量和变量在计算机高级语言中，数据有两种表现形式：常量和变量。  常量在程序运行过程中，其值不能被改变的量称为常量。 常用的常量有以下几类： （1）整型常量。12345，0，-345 （2）实型常量。 ​            有两种表现形式： ​            ①十进制小数形式。0.345，-56.79，12.0 ​            ②指数形式。1">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8.png">
-<meta property="og:image" content="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png">
-<meta property="og:image" content="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B4%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E5%92%8C%E5%80%BC%E7%9A%84%E8%8C%83%E5%9B%B4.png">
-<meta property="og:image" content="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/3.14159%E7%9A%84%E5%AD%98%E5%82%A8%E5%BD%A2%E5%BC%8F.png">
-<meta property="og:image" content="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E5%AE%9E%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9C%89%E5%85%B3%E6%83%85%E5%86%B5.png">
-<meta property="og:image" content="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/float%E5%9E%8B%E7%9A%84%E5%AD%98%E5%82%A8%E8%8C%83%E5%9B%B4.png">
+<meta property="og:image" content="e:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8.png">
+<meta property="og:image" content="e:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png">
+<meta property="og:image" content="e:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B4%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E5%92%8C%E5%80%BC%E7%9A%84%E8%8C%83%E5%9B%B4.png">
+<meta property="og:image" content="e:/blogs/pictures/C程序设计/3.14159的存储形式.png">
+<meta property="og:image" content="e:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E5%AE%9E%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9C%89%E5%85%B3%E6%83%85%E5%86%B5.png">
+<meta property="og:image" content="e:/blogs/pictures/C程序设计/float型的存储范围.png">
 <meta property="article:published_time" content="2020-05-23T06:52:00.636Z">
-<meta property="article:modified_time" content="2020-05-23T07:01:00.968Z">
+<meta property="article:modified_time" content="2020-05-23T07:20:58.645Z">
 <meta property="article:author" content="Weiwei">
-<meta property="article:tag" content="C">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8.png">
+<meta name="twitter:image" content="e:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8.png">
 
-<link rel="canonical" href="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="http://yoursite.com/uncategorized/c%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
 
 
 <script id="page-configurations">
@@ -53,7 +52,7 @@
   };
 </script>
 
-  <title>《C程序设计》学习笔记 | Weiwei's Blog</title>
+  <title>C程序设计 | Weiwei's Blog</title>
   
 
 
@@ -174,7 +173,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/%E3%80%8Ac%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/uncategorized/c%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,7 +186,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          《C程序设计》学习笔记
+          C程序设计
         </h1>
 
         <div class="post-meta">
@@ -198,16 +197,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-05-23 14:52:00 / 修改时间：15:01:00" itemprop="dateCreated datePublished" datetime="2020-05-23T14:52:00+08:00">2020-05-23</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9C%AC%E7%A7%91%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">本科基础</span></a>
-                </span>
+              <time title="创建时间：2020-05-23 14:52:00 / 修改时间：15:20:58" itemprop="dateCreated datePublished" datetime="2020-05-23T14:52:00+08:00">2020-05-23</time>
             </span>
 
           
@@ -228,10 +218,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>《C程序设计》(第五版)————谭浩强</p>
-<a id="more"></a>
-
-<h1 id="顺序程序设计"><a href="#顺序程序设计" class="headerlink" title="顺序程序设计"></a>顺序程序设计</h1><h2 id="数据的表现形式及其运算"><a href="#数据的表现形式及其运算" class="headerlink" title="数据的表现形式及其运算"></a>数据的表现形式及其运算</h2><h3 id="常量和变量"><a href="#常量和变量" class="headerlink" title="常量和变量"></a>常量和变量</h3><p>在计算机高级语言中，数据有两种表现形式：常量和变量。</p>
+        <h1 id="顺序程序设计"><a href="#顺序程序设计" class="headerlink" title="顺序程序设计"></a>顺序程序设计</h1><h2 id="数据的表现形式及其运算"><a href="#数据的表现形式及其运算" class="headerlink" title="数据的表现形式及其运算"></a>数据的表现形式及其运算</h2><h3 id="常量和变量"><a href="#常量和变量" class="headerlink" title="常量和变量"></a>常量和变量</h3><p>在计算机高级语言中，数据有两种表现形式：常量和变量。</p>
 <ol>
 <li><h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><p>在程序运行过程中，其值不能被改变的量称为<span style='color:文字颜色;background:DarkSeaGreen;font-size:文字大小;font-family:字体;'>常量</span>。</p>
 <p>常用的常量有以下几类：</p>
@@ -247,7 +234,7 @@
 <p>​                单撇号是界限符。</p>
 <p>​                字符常量存储在计算机存储单元中时，以其代码<span style='color:gray;background:背景颜色;font-size:文字大小;font-family:字体;'>（一般采用ASCII代码）</span>存储的。以二进制形式存放。</p>
 <p>​            ②转义字符：以字符“\”开头的字符序列，将“\”后面的字符转换成另外的意义。</p>
-<p><img src="pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8.png" alt="转义字符及其作用"></p>
+<p><img src="E:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8.png" alt="转义字符及其作用"></p>
 <p><span style='color:gray;background:背景颜色;font-size:文字大小;font-family:字体;'>‘\101’：八进制数101的ASCII字符</span></p>
 <p><span style='color:gray;background:背景颜色;font-size:文字大小;font-family:字体;'>‘\x41’：十六进制数41的ASCII字符</span></p>
 <p>（4）<strong>字符串常量</strong>。<span style='color:gray;background:背景颜色;font-size:文字大小;font-family:字体;'>“boy”,“123”</span></p>
@@ -283,7 +270,7 @@
 <h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p><span style='color:文字颜色;background:Crimson;font-size:文字大小;font-family:字体;'>注意</span>：用计算机进行的计算不是抽象的理论值的计算，而是用工程的方法实现的计算，在许多情况下只能得到近似的结果。</p>
 <p><span style='color:文字颜色;background:DarkSeaGreen;font-size:文字大小;font-family:字体;'>类型</span>，就是对数据分配存储单元的安排，包括存储单元的长度<span style='color:gray;background:背景颜色;font-size:文字大小;font-family:字体;'>（占多少字节）</span>以及数据的存储形式。</p>
 <p>不同的类型分配不同的长度和存储形式。</p>
-<p><img src="pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" alt="数据类型"></p>
+<p><img src="E:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" alt="数据类型"></p>
 <p><span style='color:文字颜色;background:Gold;font-size:文字大小;font-family:字体;'>基本类型</span>和<span style='color:文字颜色;background:Gold;font-size:文字大小;font-family:字体;'>枚举类型</span>变量的值都是数值，统称为<span style='color:文字颜色;background:DarkSeaGreen;font-size:文字大小;font-family:字体;'>算术类型</span>。</p>
 <p><span style='color:文字颜色;background:Gold;font-size:文字大小;font-family:字体;'>算术类型</span>和<span style='color:文字颜色;background:Gold;font-size:文字大小;font-family:字体;'>指针类型</span>统称为<span style='color:文字颜色;background:DarkSeaGreen;font-size:文字大小;font-family:字体;'>纯量类型</span>，因为其变量的值是以数字来表示的。</p>
 <p>枚举类型是程序中用户定义的整数类型。</p>
@@ -305,7 +292,7 @@
 <p><span style='color:文字颜色;background:BurlyWood;font-size:文字大小;font-family:字体;'>说明</span>：以上存储方式都是以补码形式存储。</p>
 <p>​            sizeof是测量类型或变量长度的<span style='color:文字颜色;background:Gold;font-size:文字大小;font-family:字体;'>运算符</span>。        </p>
 </li>
-<li><h4 id="整型变量的符号属性"><a href="#整型变量的符号属性" class="headerlink" title="整型变量的符号属性"></a>整型变量的符号属性</h4><p><img src="pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B4%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E5%92%8C%E5%80%BC%E7%9A%84%E8%8C%83%E5%9B%B4.png" alt="整型数据常见的存储空间和值的范围"></p>
+<li><h4 id="整型变量的符号属性"><a href="#整型变量的符号属性" class="headerlink" title="整型变量的符号属性"></a>整型变量的符号属性</h4><p><img src="E:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B4%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E5%92%8C%E5%80%BC%E7%9A%84%E8%8C%83%E5%9B%B4.png" alt="整型数据常见的存储空间和值的范围"></p>
 <p>默认为有符号类型。</p>
 <p><span style='color:文字颜色;background:BurlyWood;font-size:文字大小;font-family:字体;'>说明</span>：</p>
 <p>（1）只有整型（包括字符型）数据可以加signed或unsigned修饰符，实型数据不能加。</p>
@@ -332,7 +319,7 @@
 <p>​            <span style='color:文字颜色;background:Gold;font-size:文字大小;font-family:字体;'>存储形式</span>：以规范化的二进制数指数形式存储。</p>
 <p>​            在存储时，系统将实型数据分成小数部分和指数部分，分别存放。小数部分的小数点前面的数为0。</p>
 <p>​            <span style='color:gray;background:背景颜色;font-size:文字大小;font-family:字体;'>例：3.14159在内存中的存放形式如图所示。（用十进制数示意，实际是用二进制数表示小数部分以及用2                的幂次表示指数部分。）</span></p>
-<p>​            <img src="pictures/C程序设计/3.14159的存储形式.png" alt="3.14159的存储形式" style="zoom: 25%;" /></p>
+<p>​            <img src="E:/blogs/pictures/C程序设计/3.14159的存储形式.png" alt="3.14159的存储形式" style="zoom: 25%;" /></p>
 <p>小数部分占的位数越多，数的有效数字越多，精度也就越高；</p>
 <p>指数部分占的位数越多，能表示的数值范围就越大。</p>
 <p>float型数据能得到<span style='color:文字颜色;background:Gold;font-size:文字大小;font-family:字体;'>6位有效数字</span>。</p>
@@ -344,9 +331,9 @@
 <p>​            为了提高运算精度，在C语言中进行浮点数的算术运算时，将float型数据都自动转换为double型，然后进            行运算。</p>
 <p>（3）<strong>long double型</strong>（长双精度浮点型）</p>
 <p>​            <span style='color:文字颜色;background:Gold;font-size:文字大小;font-family:字体;'>8B</span></p>
-<p><img src="pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E5%AE%9E%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9C%89%E5%85%B3%E6%83%85%E5%86%B5.png" alt="实型数据的有关情况"></p>
+<p><img src="E:/blogs/pictures/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E5%AE%9E%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9C%89%E5%85%B3%E6%83%85%E5%86%B5.png" alt="实型数据的有关情况"></p>
 <p>float型变量的存储范围：</p>
-<img src="pictures/C程序设计/float型的存储范围.png" alt="float型的存储范围" style="zoom: 15%;" />
+<img src="E:/blogs/pictures/C程序设计/float型的存储范围.png" alt="float型的存储范围" style="zoom: 15%;" />
 
 <h3 id="怎样确定常量的类型"><a href="#怎样确定常量的类型" class="headerlink" title="怎样确定常量的类型"></a>怎样确定常量的类型</h3><p>常量也有类型。</p>
 <p><u>为什么要把常量分为不同的类型呢？</u></p>
@@ -384,10 +371,6 @@
     
 
       <footer class="post-footer">
-          <div class="post-tags">
-	    
-              <a href="/tags/C/" rel="tag"><i class="fa fa-tags"></i> C</a>
-          </div>
 
         
 
@@ -475,16 +458,10 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
